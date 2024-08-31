@@ -1,0 +1,88 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Roboto:wght@400;500&display=swap');
+
+/* Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Calculator Container */
+.calculator {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+}
+
+/* Form Heading */
+.calculator h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Input Fields */
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ff9800;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff8e1;
+    color: #333;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff5722;
+    color: white;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #e64a19;
+}
+
+/* Result Styles */
+#result {
+    margin-top: 25px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .calculator {
+        width: 90%;
+    }
+
+    input[type="number"], button {
+        font-size: 14px;
+    }
+
+    #result {
+        font-size: 1.2em;
+    }
+}
