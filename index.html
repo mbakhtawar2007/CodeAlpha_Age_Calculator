@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Age Calculator</title>
+    <link rel="stylesheet" href="./styles.css"> <!-- Linking the CSS file -->
 </head>
 <body>
-    
+
+<div class="calculator">
+    <h2>Age Calculator</h2>
+    <form id="ageForm">
+        <input type="number" id="day" placeholder="Day" min="1" max="31" required><br>
+        <input type="number" id="month" placeholder="Month" min="1" max="12" required><br>
+        <input type="number" id="year" placeholder="Year" min="1900" required><br>
+        <button type="submit">Calculate Age</button>
+    </form>
+    <div id="result"></div>
+</div>
+
+<script src="./script.js"></script> <!-- Linking the JavaScript file -->
 </body>
 </html>
